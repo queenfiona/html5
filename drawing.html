@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Drawing Shapes, Charts and more">
+	<title></title>
+</head>
+<body>
+	<main>
+		<canvas id="canvas" width="600" height="400">
+			
+		</canvas>
+	</main>
+	<script type="text/javascript">
+		let canvas, context;
+		canvas = document.getElementById('canvas');
+		if (canvas && canvas.getContext){
+			context = canvas.getContext('2d');
+			context.beginPath();
+			context.moveTo(75,50);
+			context.lineTo(75,100);
+			context.lineTo(25,100);
+			context.fill();
+		}
+	</script>
+
+</body>
+</html>
